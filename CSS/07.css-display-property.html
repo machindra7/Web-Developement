@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        .box {
+            border: 2px solid blue;
+            display: inline-block;
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+        /* we can convert block-level element to inline element by using property display: inline; but their is a problem doing this the problem is that when we use this property and define width or padding or margin it will apply only for left right and bottom but it will not apply for top to prevent this problem we use the property display: inline-block;  */
+        }
+        .box1 {
+            /* display: none; */
+            /* when we do a property display: none; that means the box will disappear and the space will also disappear  */
+            /* visibility: hidden; */
+            /* when we use visibility: hidden; property then the the box will disappear but the space will still remain */
+            /* display: flex; */
+            justify-content: center;
+            /* most of the time we use flex for shifting text to center  */
+            /* for example we have to shift the sentance to center the we use property display: flex; justify-content: center; by this the sentence will shift to center */ 
+            display: inline-flex;
+            /* the next property is inline-flex that means the first time we use the flex then it becomes block-level element but now when we use inline-flex then it will become inline element */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">also a nice box</div>
+    <span>I am a Good</span>
+    <span>Boy</span>
+    <a href="http://developer.mozilla.org/en-US/docs/Web/CSS/display">Display Properties</a>
+</body>
+</html>

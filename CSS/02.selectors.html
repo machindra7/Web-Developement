@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* div {
+            color: red;
+            background-color: bisque;
+        } */
+
+        /* Element Selectors */
+
+        /* class selectors */
+        .red {
+            color: red;
+            background-color: rgb(76, 137, 229);
+        }
+    
+        /* ID selectors */
+        #green {
+            color: green;
+            background-color: blueviolet;
+        }
+
+        /* child selector */
+        div > p {
+            color:chocolate;
+            background-color: chartreuse;
+        }
+
+        /* decedent selectors */
+        /* if their is p inside a div then it will apply */
+        div p {
+            color:rgb(6, 211, 105);
+            background-color: crimson;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selectors */
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: green;
+        }
+        a:hover {
+            background-color: aqua;
+        }
+        a:active {
+            background-color: blue;
+        }
+        /* if p is first child of its parents apply these property */
+        p:first-child {
+            background-color: rgb(127, 255, 200);
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am secound</p>
+    </main>
+    <div class="red">
+        I am a div
+        <article>
+            <p>I am a paragraph inside a div</p>
+        </article>
+    </div>
+    <div id="green">
+        I am also div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+</body>
+</html>

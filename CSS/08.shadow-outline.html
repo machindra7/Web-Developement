@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow and Outline in CSS</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 5px 15px 5px #72d713;
+            /* here we use the property box-shadow: h-offset v-offset blur spread color inset; by using this we can give the shadow to the box in every direction  */
+            /* h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+            blur: The larger the value, the blurrier the shadow.
+            spread: Expands or shrinks the shadow size.
+            color: Defines the shadow color.
+            inset: Makes the shadow inner. */
+        }
+        .text-element {
+            text-shadow: 2px 2px 4px #12c6de;
+            /* by using this property we can giv ethe shadow to text his syntax is text-shadow: h-offset v-offset blur color; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a Box
+    </div>
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt impedit, veritatis similique rerum temporibus necessitatibus error at? Nisi, nesciunt! Maxime repellendus recusandae voluptas repudiandae mollitia, ducimus obcaecati quae culpa ipsa quo exercitationem impedit asperiores.
+    </p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* this css only apply on first line only no matter haw many words are their in line */
+
+        /* .box::first-line{
+            color: rgb(255, 111, 0);
+        } */
+
+
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        [data-color="primary"]{
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: blue;
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: red;
+        } */
+
+        .boxes::before{
+            content: "Machindra is handsome";
+            color: blue;
+        }
+        .boxes::after{
+            content: "Machindra is GOOD";
+            color: red;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 45px;
+        }
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <!-- <div class="box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam libero laudantium iusto veniam reprehenderit debitis labore. Qui blanditiis voluptas deleniti sit dicta soluta similique, dolores sed perferendis dolorum rem enim accusantium fuga inventore repellat cupiditate praesentium, error nobis quos odit nihil omnis ullam. Provident, explicabo eaque reprehenderit voluptate autem dolore eveniet non adipisci odit dicta. Consectetur soluta, omnis ipsum aut minus eligendi rem nisi placeat sed perferendis! Obcaecati deserunt cupiditate tenetur eum, quod minima qui impedit ratione, labore tempora quasi odio porro nisi laboriosam totam quisquam iusto temporibus. Neque vero quibusdam iste dolorum, dolore omnis eos corrupti consequuntur reiciendis blanditiis corporis. Fugiat quaerat ratione perspiciatis ex in ad atque laboriosam necessitatibus reiciendis, officiis cumque molestias maxime odio quae quidem libero, minus, possimus autem aspernatur! Praesentium libero exercitationem unde id tempora cum iusto vitae aspernatur tempore a ratione, aut minus, ullam ea nisi consectetur rem beatae accusantium. Odio vitae consectetur fugit, repudiandae animi, ut perferendis doloremque obcaecati nam facilis aliquam eligendi fuga voluptatum illo dolorum praesentium assumenda eveniet. Dolor itaque cupiditate earum rem! Voluptatum quasi vero quisquam necessitatibus maiores iusto, aliquam autem praesentium unde ipsum id dolor similique quibusdam repellendus aliquid tenetur amet voluptate ratione saepe dolores at, sint nisi. Quo aspernatur est error doloremque odio incidunt ex suscipit voluptates tempora adipisci corporis dolorum eveniet voluptate quaerat quia similique vel alias unde, atque mollitia nostrum magni! Cum minus modi, voluptatem, earum libero, voluptates animi laudantium eum illum beatae aspernatur. Est ducimus minima unde ipsa omnis ad totam corporis rerum eligendi, temporibus eos veritatis odit in dolor mollitia reprehenderit iure dolorum sapiente eum vero laborum perferendis? Labore, rem dolores nemo pariatur excepturi tempore officiis? Fugit et aliquid labore rem numquam nostrum nobis optio ullam, voluptatem culpa deleniti consequuntur incidunt, tempora tempore nihil voluptas! Alias voluptates quos doloremque deleniti, itaque consequatur odit molestiae, quo quod minima, temporibus minus commodi fuga obcaecati. Porro ab officiis officia, necessitatibus ipsam unde vero rem et! Quam ab unde consectetur soluta, ullam nostrum distinctio corrupti laudantium, inventore aperiam hic ad voluptatum asperiores tempora praesentium vitae blanditiis quidem quo eius at. Laudantium accusamus tenetur ullam, excepturi, suscipit odit saepe vero repellendus ipsum perspiciatis quos provident. Eligendi, in! Vitae odio sed quae sapiente modi quaerat minima voluptatem aliquid beatae blanditiis, in earum illum distinctio sunt optio amet velit eos totam officia temporibus quisquam enim est. Cumque praesentium vel, distinctio quidem nam nesciunt odio! Eum fugiat incidunt, maxime atque molestiae blanditiis nulla consectetur magnam ullam assumenda asperiores explicabo consequuntur omnis doloremque provident voluptate vero reiciendis sed saepe! Corporis consectetur ad veniam. Pariatur esse rerum aut error magni quo, maxime odit porro id dolorem quasi. Modi eaque quidem quasi. Eveniet maiores amet delectus possimus fugiat tempora minus facilis cumque ratione, omnis, obcaecati nobis aspernatur doloribus? Et, alias?</div> -->
+        <div data-color="primary" class="box">I am first Box</div>
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+</body>
+</html>

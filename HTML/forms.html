@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="post">
+        <h1>Form to apply for Sigma web Developement course - TA </h1>
+        <div>
+        <label for="username">Enter your Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username"> <!-- input type text is used to enter text as input like name, username and many more -->
+        </div>
+
+        <div>
+        <input type="radio" id="male" name="gender" value="male">  <!-- input type radio is used for choosing option like female or male and many other options here you can only choose one option-->
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">  <!-- input type checkbox is used to create a checkbox like choose some options as many as you can-->
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="50" rows="10">
+            </textarea>  <!-- textarea is used to create a comment box or create a text area where anyone can write their comment -->
+        </div>
+
+        <div>
+            <select name="fruits">  <!-- the select tag is used to create a selection menu where you can select one option from many other options -->
+                <option value="apple">Apple</option>
+                <option value="mango">Mango</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>

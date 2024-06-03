@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Variables</title>
+    <link rel="stylesheet" href="12.css-variable.css">
+    <style>
+        :root {
+            --color: rgb(214, 104, 224);
+            --seccolor: rgb(240, 238, 143);
+            --defpad: 23px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child {
+            --color:rgb(222, 122, 7);
+            background-color: var(--color);
+        }
+
+        .container {
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, assumenda asperiores ducimus aliquid alias iusto
+        facilis praesentium earum porro quo repellendus? Expedita itaque natus nulla veritatis minima praesentium,
+        soluta magnam consectetur, corrupti culpa, quasi dolorum mollitia modi! Magnam, reiciendis eveniet! In
+        temporibus sint voluptas dolore?
+    </div>
+</body>
+
+</html>
+
+<!-- when we have change any type of style like we want to change color of text or background-color then rather changing multiple times by using css variablr we can change it by one click 
+eg. we create a class name container and the initially the color of container is red and now we want to change the color then we use this variable property like
+first we create :root in css and inside it write
+:root {
+    --color: red;
+}
+and after that we mention this it when we styling the container by using var variable like
+.container{
+    background-color: var(--color);
+}
+
+it is same for applying padding or margin with --defpad:0px; like that
+we can change it whenever we want and in one click -->

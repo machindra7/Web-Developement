@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Styling in CSS</title>
+    <style>
+        nav ul li {
+            list-style: none;
+            /*  their is another property in list that is list-style, by using this property we can change the list's marker we can make it in devanagari and many more options are there  */
+            /*  if we make list-style: none; that means we remove the marker  */
+
+            padding: 23px;
+            /* list-style: devanagari; */
+
+            /* list-style-type: '😙'; */
+            /* by using this property we can replace devanagari to any type of emoji like fir and many more */
+
+            /* background-color: yellow; */
+            /* if we specify the background-color then it will only apply on elements it will not apply on marker. here marker is not inside the list */
+
+            /* list-style-position: inside; */
+            /* by using this property we will see that previously the background-color is only apply for elements but using this property the background-color is also apply on marker */
+
+            /* border: 2px solid black; */
+            /* list-style: inside disc; */
+
+            /* list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+
+            /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+            /* by using this property we can place any photo on the place of marker */
+        }
+        nav ul {
+            display: flex;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+<!-- their is a display property of list that is list-item that means inside this their is a marker and the item the marker is list's disc or circle or any other thing  -->

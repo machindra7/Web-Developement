@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Property in CSS</title>
+    <style>
+        .box {
+            width: 50vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow: hidden;
+            /* overflow auto means agar ye overflow kar raha hai to scroll-bar dikhao buy agar ye overflow nahi kar raha to scroll-bar mat dikhao */
+            /* It is quite similar to scroll but the scroller is only added when the content starts getting out of the container. Mostly this option is used to avoid unnecessary scroll bars if the content already is within the content dimensions. */
+
+            /* overflow: scroll; */
+            /* it means it is not matter that your text is overflowing or not the scroll will always show on screen */
+
+            white-space: nowrap;
+            /* it means it took only horizontal space not vertical space it will write in one line */
+
+            text-overflow: ellipsis;
+            /* by using this property we can make text as continious for example our lext is I am a Good Boy and... somthing like that will show on screen */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am Good Boy and I love to write Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, dolor repellendus veritatis molestias modi incidunt tempora qui sunt illum excepturi exercitationem necessitatibus fuga nisi aut commodi magnam totam doloribus vitae. Hic, voluptatum cum inventore veniam ducimus exercitationem laborum. Ex maiores facilis accusamus at delectus. Doloribus ex, labore totam, sint exercitationem optio molestias iure aperiam quae debitis placeat. Cum quod enim quas? Aspernatur dignissimos debitis repellendus vel ullam, voluptatem ipsum perferendis, nihil nisi et iusto illo maiores modi quae rem. Recusandae officiis architecto amet aliquid dolorum voluptatibus quae porro sunt ab, harum reiciendis at consequatur, suscipit quibusdam numquam quasi, repudiandae asperiores.
+    </div>
+</body>
+</html>

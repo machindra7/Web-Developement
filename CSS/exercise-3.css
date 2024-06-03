@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: gray;
+}
+.card {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 600px;
+    border: 8px silod black;
+    border-radius: 8px;
+}
+.image {
+    padding: 9px;
+}
+.image img {
+    width: 380px;
+    height: 250px;
+    border-radius: 8px;
+}
+.capsule {
+    padding: 10px;
+}
+.capsule span {
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1px 8px;
+    font-size: 12px;
+    color: gray;
+}
+.head {
+    padding: 10px;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.content {
+    padding: 10px;
+    font-size: 20px;
+    color: gray;
+}
+.button {
+    padding: 0px;
+    text-align: center;
+    padding-top: 50px;
+}
+.button button {
+    border-radius: 20px;
+    padding: 10px 18px;
+    background-color: rgb(162, 204, 226);
+    color: rgb(14, 150, 234);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.button button:hover {
+    background-color: rgb(200, 215, 224);
+    color: rgb(8, 137, 218);
+}

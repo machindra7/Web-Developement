@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body {
+            background-color: red;
+        }
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        .boxes {
+            display: flex;
+        }
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hey I am a red body guy!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+<!-- media query use to create responsive designs -->
+
+<!-- in media query first we mention "@media" after that we write "not / only" after that we mention the device which we want to write the media query "screen" and next we write "and" then we write expression in bracket -->
+<!-- syntax of media query:
+@media not|only mediatype and (expressions){
+    CSS-Code;
+} -->
+
+<!-- mediatypes: 
+1) all - it apply for all devices.
+2) screen - if we want show on mobile and tab and laptop then use it.
+3) print - if website is showing on printer then use it.
+4) speech - it is use for then who can not see then use it. -->
+
+<!-- above in media query 
+@media only screen and (max-width: 455px){
+    body{
+        background-color: red;
+    }
+} 
+we mention it max width is 455px that means if the maxmium width is 455px then apply the following style that means apply between 0 to 455px if do min-width rather than max width then it will apply after 455px  -->
