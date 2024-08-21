@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="Harry" data-conceptby="rohan">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+    </div>
+    <script>
+        // console.log(document.querySelector(".box"))
+        // console.log(document.querySelector(".box").innerHTML)
+        // console.log(document.querySelector(".container").innerHTML)
+        // console.log(document.querySelector(".box").innerText)
+        // console.log(document.querySelector(".container").innerText)
+
+
+        document.querySelector(".container").outerHTML
+        document.querySelector(".container").tagName
+        document.querySelector(".container").nodeName
+        document.querySelector(".container").textContent
+        document.querySelector(".container").hidden
+        // document.querySelector(".container").hidden = true
+
+        // document.querySelector(".box").innerHTML = "Hey I am Harry"
+        // It will change the first sentance means it will change the HTML 
+        document.querySelector(".box").hasAttribute("style")
+        // it will show is their style attribube available in this HTML or not if it is available it will show true otherwise it will show false 
+        document.querySelector(".box").getAttribute("style")
+        // it will show which style is applyed on the HTML 
+        document.querySelector(".box").setAttribute("style", "display: inline")
+        // it will add more style whenever needed in the HTML 
+        document.querySelector(".box").attributes
+        // it will show all the attributes that used in the HTML 
+
+        // document.querySelector(".box").removeAttribute("style")
+
+        // it will remove attributes of style in HTML  
+
+        // document.designMode = "on"
+
+        // it will allow user to do anything on the webpage we will change text and everything 
+
+
+        // let div = document.createElement("div");
+        // div.innerHTML = "I have been inserted <b>by Harry</b>"
+        // div.setAttribute("class", "created");
+
+        // document.querySelector(".contaioner").append(div);
+        // whenever we apply "append" it will show on the the end of the node 
+
+        // document.querySelector(".container").prepend(div)
+        // it will insert at the beginning of the node 
+
+        // document.querySelector(".container").before(div)
+        // it will insert before HTML's div 
+
+        // document.querySelector(".container").after(div)
+        // it will show after the HTML's div 
+
+        // document.querySelector(".container").replaceWith(div)
+        // it will replace the first HTML's div and show's his inner HTML 
+
+        let cont = document.querySelector(".container")
+        // cont.insertAdjacentHTML("afterbegin", "<b>I am under water. Please help me here too much raining.... iuuuuuoooo</b>")
+        // here afterbegin:- it will apply just after container is beginning just before first div is starting 
+
+        // cont.insertAdjacentHTML("afterend", "<b>I am under water. Please help me here too much raining.... iuuuuuoooo</b>")
+        // here for afterend:- it will insert just outside the container  
+
+
+        cont.insertAdjacentHTML("beforebegin", "<b>I am under water. Please help me here too much raining.... iuuuuuoooo</b>")
+        // here for beforebegin:- it will apply before container starts 
+
+        // cont.insertAdjacentHTML("beforeend", "<b>I am under water. Please help me here too much raining.... iuuuuuoooo</b>")
+        // here beforeend:- it will insert in the container after the all div's and just before the end of the container 
+
+
+        document.querySelector(".container").classList
+        document.querySelector(".container").className
+        document.querySelector(".container").classList.add("machindra")
+        document.querySelector(".container").classList.remove("machindra")
+        document.querySelector(".container").classList.toggle("red")
+    </script>
+</body>
+</html>
